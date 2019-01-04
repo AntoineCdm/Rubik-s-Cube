@@ -28,23 +28,24 @@ columns[2] = BLOCKED ;
 columns[3] = BLOCKED ;
 
 cela signifie que les seules cases où l'on peut rechercher une case disponible sont les cases [2,0] et [2,1]. Cela permet de bloquer certaines cases pour éviter de "casser" des carrés précédemment constitués.
-−−−−−−−−−−−−−−−−−
+
+−−−−−−−−−
 
 |  2  |  1  |  3  |  0  |
 
-−−−−−−−−−−−−−−−−−
+−−−−−−−−−
 
 |  0  |  0  |  1  |  1  |
 
-−−−−−−−−−−−−−−−−−
+−−−−−−−−−
 
 |  2  |  2  |  3  |  0  |
 
-−−−−−−−−−−−−−−−−−
+−−−−−−−−−
 
 |  2  |  3  |  1  |  3  |
 
-−−−−−−−−−−−−−−−−−
+−−−−−−−−−
 
 En reprenant les lignes et le carré précédents, "look_for_space(table, lines, colunms, 1)" renverra comme résultat [2,0].
 
@@ -64,139 +65,4 @@ Dans la fonction main, les variables sont d'abord déclarées avec la mémoire a
 
 Le projet était individuel et s'est déroulé sur 2 jours, et a constitué à faire un rubik's cube à 4 faces et 4 couleurs (représentées par des nombres allant de 0 à 3). Le cube est présenté sous la forme d'un carré de 4 x 4 cases (4 sous-carrés de 4 cases). Il a été complété jusqu'à la constitution du premier carré (4 cases en haut à droite).
 
-
-Exemple d'output du fichier exécutable dans un terminal :
-−−−−−−−−−−−−−−−−−
-
-|  0  |  1  |  2  |  3  |
-
-−−−−−−−−−−−−−−−−−
-
-|  0  |  1  |  2  |  3  |
-
-−−−−−−−−−−−−−−−−−
-
-|  0  |  1  |  2  |  3  |
-
-−−−−−−−−−−−−−−−−−
-
-|  0  |  1  |  2  |  3  |
-
-−−−−−−−−−−−−−−−−−
-
-build first line
-
-−−−−−−−−−−−−−−−−−
-
-|  0  |  2  |  2  |  3  |
-
-−−−−−−−−−−−−−−−−−
-
-|  1  |  1  |  3  |  0  |
-
-−−−−−−−−−−−−−−−−−
-
-|  0  |  1  |  2  |  3  |
-
-−−−−−−−−−−−−−−−−−
-
-|  0  |  1  |  2  |  3  |
-
-−−−−−−−−−−−−−−−−−
-
-
-−−−−−−−−−−−−−−−−−
-
-|  0  |  0  |  2  |  3  |
-
-−−−−−−−−−−−−−−−−−
-
-|  3  |  1  |  1  |  1  |
-
-−−−−−−−−−−−−−−−−−
-
-|  0  |  1  |  2  |  3  |
-
-−−−−−−−−−−−−−−−−−
-
-|  0  |  2  |  2  |  3  |
-
-−−−−−−−−−−−−−−−−−
-
-
-−−−−−−−−−−−−−−−−−
-
-|  0  |  0  |  0  |  3  |
-
-−−−−−−−−−−−−−−−−−
-
-|  3  |  1  |  2  |  1  |
-
-−−−−−−−−−−−−−−−−−
-
-|  2  |  3  |  2  |  1  |
-
-−−−−−−−−−−−−−−−−−
-
-|  0  |  2  |  1 |  3  |
-
-−−−−−−−−−−−−−−−−−
-
-
-−−−−−−−−−−−−−−−−−
-
-|  0  |  0  |  0  |  1  |
-
-−−−−−−−−−−−−−−−−−
-
-|  3  |  1  |  2  |  3  |
-
-−−−−−−−−−−−−−−−−−
-
-|  2  |  3  |  2  |  1  |
-
-−−−−−−−−−−−−−−−−−
-
-|  3  |  0  |  2  |  1  |
-
-−−−−−−−−−−−−−−−−−
-
-
-−−−−−−−−−−−−−−−−−
-
-|  0  |  0  |  0  |  0  |
-
-−−−−−−−−−−−−−−−−−
-
-|  3  |  1  |  2  |  1  |
-
-−−−−−−−−−−−−−−−−−
-
-|  2  |  3  |  2  |  3  |
-
-−−−−−−−−−−−−−−−−−
-
-|  2  |  1  |  3  |  1  |
-
-−−−−−−−−−−−−−−−−−
-
-
-build line to square
-
-−−−−−−−−−−−−−−−−−
-
-|  0  |  0  |  1  |  3  |
-
-−−−−−−−−−−−−−−−−−
-
-|  0  |  0  |  2  |  1  |
-
-−−−−−−−−−−−−−−−−−
-
-|  2  |  3  |  2  |  3  |
-
-−−−−−−−−−−−−−−−−−
-
-|  2  |  1  |  3  |  1  |
-−−−−−−−−−−−−−−−−−
-
+a.out est le fichier exécutable et peut être lancé dans un terminal pour avoir un aperçu d'output.
