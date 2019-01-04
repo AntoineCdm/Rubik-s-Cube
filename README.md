@@ -10,24 +10,42 @@ is_in.c : contient 2 fonctions de 3 paramètres, la table étudiée, la colonne 
 
 looking_space.c : contient une fonction prenant 4 paramètres : la table étudiée, 2 tableaux de taille 4 et un nombre. La fonction renvoie un tableau de 2 nombres correspondant aux coordonnées d'un point dont la valeur est différente du nombre en paramètre, et qui est une case considérée comme disponible pour servir de destination à une autre case. Les 2 tableaux en paramètre prennent les valeurs "BLOCKED" ou "EMPTY" : si une valeur est "empty", alors la ligne est ouverte à la recherche d'un espace.
 Exemple : si on a 
+
 lines[0] = BLOCKED ;
+
 lines[1] = BLOCKED ;
+
 lines[2] = EMPTY ;
+
 lines[3] = BLOCKED ;
+
 columns[0] = EMPTY ;
+
 columns[1] = EMPTY ;
+
 columns[2] = BLOCKED ;
+
 columns[3] = BLOCKED ;
+
 cela signifie que les seules cases où l'on peut rechercher une case disponible sont les cases [2,0] et [2,1]. Cela permet de bloquer certaines cases pour éviter de "casser" des carrés précédemment constitués.
 −−−−−−−−−−−−−−−−−
+
 | 2 | 1 | 3 | 0 |
+
 −−−−−−−−−−−−−−−−−
+
 | 0 | 0 | 1 | 1 |
+
 −−−−−−−−−−−−−−−−−
+
 | 2 | 2 | 3 | 0 |
+
 −−−−−−−−−−−−−−−−−
+
 | 2 | 3 | 1 | 3 |
+
 −−−−−−−−−−−−−−−−−
+
 En reprenant les lignes et le carré précédents, "look_for_space(table, lines, colunms, 1)" renverra comme résultat [2,0].
 
 looking_value.c : fonctionne de la même manière que la fonction précédente, mais pour trouver la première occurence avec la valeur cherchée (4ème arguement). En reprenant l'exemple précédent, "look_for_value(table, lines, columns, 2)" renverra comme résultat [2,0].
