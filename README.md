@@ -29,6 +29,8 @@ columns[3] = BLOCKED ;
 
 cela signifie que les seules cases où l'on peut rechercher une case disponible sont les cases [2,0] et [2,1]. Cela permet de bloquer certaines cases pour éviter de "casser" des carrés précédemment constitués.
 
+Carré d'exemple :
+
 −−−−−−−−−
 
 |  2  |  1  |  3  |  0  |
